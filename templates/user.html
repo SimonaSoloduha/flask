@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h3 class="title">{{ user['name'] }}</h3>
+    <hr>
+    <h2>{% block title %} {{ user['email'] }} {% endblock %}</h2>
+    <h4>{{ user['roles'] }}</h4>
+    <hr>
+    <h2><a href="{{ url_for('auth.edit', user_id=user['id']) }}">
+        <span class="badge badge-warning">Edit user's role</span>
+    </a></h2>
+
+{% endblock %}
+
