@@ -1,36 +1,34 @@
 # flask_project
 
-## запуск проета:
+## запуск проекта:
 
-Скачать проект на свой компьютер
+1. Скачать проект на свой компьютер
 
+2. Перейти в консоль для запуска
 
-Консоль: 
 cd <путь до проекта>
-Создать и активировать венв
 
+3. Создать и активировать venv
+python3 -m venv
 source venv/bin/activate
 
-# Установить пакеты: 
+3. Установить пакеты: 
 
-pip install flask 
-pip install flask flask-sqlalchemy flask-login 
-pip3 install flask_sqlalchemy 
-pip3 install flask_security
+pip3 install -r requirements.txt
 
 (Все используемые библиотеки представлены в файле requirements.txt)
 
-# Создать БД 
+4. Создать БД 
 Используя Python REPL создаем базу данных, используя метод create_all для объекта db. 
 
 Убедитесь, что вы все еще находитесь в виртуальной среде и в каталоге flask_auth_app: 
 * from project import db, create_app
 * db.create_all(app=create_app())
 
-# Задать значения FLASK_APP и FLASK_DEBUG 
+5. Задать значения FLASK_APP и FLASK_DEBUG 
 
 * 		export FLASK_APP=flask
 * 		export FLASK_DEBUG=1
 
-# Запустить проект 
+6. Запустить проект 
 flask run 
