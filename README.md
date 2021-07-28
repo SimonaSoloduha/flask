@@ -2,26 +2,33 @@
 
 ## запуск проекта:
 
-1. Клонировать проект на свой компьютер
+1. Перейти в консоль для запуска
 
-2. Перейти в консоль для запуска
+2. Клонировать проект на свой компьютер
 
-cd <путь до проекта>
+Перейдите в папку, в которой будет храниться проект 
 
-3. Создать и активировать venv
+cd <путь до папки>
 
-Если venv не создан автоматически - выполнить команды: 
+
+2. Склонируйте проект 
+
+git clone https://github.com/SimonaSoloduha/flask
+
+
+3. перейдите в папку проекта 
+
+cd flask
+
+3. Создайте виртуальное окружение venv
 
 python3 -m venv venv
 
-source venv/bin/activate
-
-Если venv не создан - - выполнить команду:
+4. Активируйте виртуальное окружение venv
 
 source venv/bin/activate
 
-
-3. Установить пакеты: 
+5. Установите необходимые пакеты: 
 
 pip3 install -r requirements.txt
 
@@ -43,15 +50,17 @@ You should consider upgrading via the '..... flask/venv/bin/python3 -m pip insta
 * from project import db, create_app
 * db.create_all(app=create_app()) -->
 
-5. Задать значения FLASK_APP и FLASK_DEBUG 
+6. Задать значения FLASK_APP и FLASK_DEBUG 
 
 export FLASK_APP=project
 export FLASK_DEBUG=1
 
 
-6. Запустить проект
+7. Запустить проект
 
 flask run 
+
+(Если проект не запускается из-за ошибок в установке пакетов, но при этом вы установили все необходимые пакеты - перезапустите проект выполнив шаги 3, 4, 6)
 
 
 ## Описание пользователей 
