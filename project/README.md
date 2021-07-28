@@ -27,16 +27,20 @@ pip3 install -r requirements.txt
 
 (Все используемые библиотеки представлены в файле requirements.txt)
 
-4. Создать БД 
+<!-- 4. Создать БД 
 Используя Python REPL создаем базу данных, используя метод create_all для объекта db. 
 
 * from project import db, create_app
-* db.create_all(app=create_app())
+* db.create_all(app=create_app()) -->
 
 5. Задать значения FLASK_APP и FLASK_DEBUG 
 
 * 		export FLASK_APP=flask
 * 		export FLASK_DEBUG=1
+* 		export FLASK_ENV=development
+
+
+FLASK_ENV=development ?
 
 6. Запустить проект 
 flask run 
