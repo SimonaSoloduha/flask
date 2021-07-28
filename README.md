@@ -27,6 +27,16 @@ pip3 install -r requirements.txt
 
 (Все используемые библиотеки представлены в файле requirements.txt)
 
+pip3 install flask_sqlalchemy
+
+
+При необходимости обновить pip 
+
+(Если получите сообщение: 
+WARNING: You are using pip version 20.2.3; however, version 21.2.1 is available.
+You should consider upgrading via the '..... flask/venv/bin/python3 -m pip install --upgrade pip' command.)
+
+
 <!-- 4. Создать БД 
 Используя Python REPL создаем базу данных, используя метод create_all для объекта db. 
 
@@ -38,7 +48,9 @@ pip3 install -r requirements.txt
 export FLASK_APP=project
 export FLASK_DEBUG=1
 
-6. Запустить проект 
+
+6. Запустить проект
+
 flask run 
 
 
