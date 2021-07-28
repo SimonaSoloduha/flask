@@ -2,7 +2,7 @@
 
 ## запуск проекта:
 
-1. Перейти в консоль для запуска
+1. Откройте консоль
 
 2. Перейдите в папку, в которой будет храниться проект 
 
@@ -35,7 +35,7 @@ pip3 install -r requirements.txt
 pip3 install flask_sqlalchemy
 
 
-При необходимости обновить pip 
+При необходимости обновите pip 
 
 (Если получите сообщение: 
 WARNING: You are using pip version 20.2.3; however, version 21.2.1 is available.
@@ -48,7 +48,7 @@ You should consider upgrading via the '..... flask/venv/bin/python3 -m pip insta
 * from project import db, create_app
 * db.create_all(app=create_app()) -->
 
-6. Задать значения FLASK_APP и FLASK_DEBUG 
+6. Задайте значения FLASK_APP и FLASK_DEBUG 
 
 
 export FLASK_APP=project
@@ -56,12 +56,16 @@ export FLASK_APP=project
 export FLASK_DEBUG=1
 
 
-7. Запустить проект
+7. Запустите проект
 
 flask run 
 
 (Если проект не запускается из-за ошибок в установке пакетов, но при этом вы установили все необходимые пакеты - перезапустите проект выполнив шаги 3, 4, 6)
 
+8. Перейдете по ссыке
+
+
+http://127.0.0.1:5000/ 
 
 ## Описание пользователей 
 
