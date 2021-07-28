@@ -94,6 +94,30 @@ def one_user(user_id):
     return render_template('user.html', user=user)
 
 
+@auth.route('/create', methods=('GET', 'POST'))
+@login_required
+def create():
+    if current_user.roles == 'superuser':
+        if request.method == 'POST':
+            email = request.form['email']
+            name = request.form['name']
+            password = request.form['password']
+            roles = request.form['roles']
+
+            if not name:
+                flash('Name is required!')
+            else:
+                new_user = User(email=email, name=name, password=generate_password_hash(password, method='sha256'),
+                                roles=roles)
+                db.session.add(new_user)
+                db.session.commit()
+                return redirect(url_for('main.profile'))
+
+        return render_template('create.html')
+    else:
+        return redirect(url_for('main.profile'))
+
+
 @auth.route('/<int:user_id>/edit', methods=('GET', 'POST'))
 @login_required
 def edit(user_id):
