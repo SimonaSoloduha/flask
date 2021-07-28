@@ -35,13 +35,8 @@ pip3 install -r requirements.txt
 
 5. Задать значения FLASK_APP и FLASK_DEBUG 
 
-* 		export FLASK_APP=flask
-* 		export FLASK_DEBUG=1
-* 		export FLASK_ENV=development
-
-
-FLASK_ENV=development ?
-flask_sqlalchemy ?
+export FLASK_APP=project
+export FLASK_DEBUG=1
 
 6. Запустить проект 
 flask run 
