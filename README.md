@@ -12,7 +12,7 @@ cd <путь до проекта>
 
 Если venv не создан автоматически - выполнить команды: 
 
-python3 -m venv 
+python3 -m venv venv
 
 source venv/bin/activate
 
@@ -41,6 +41,7 @@ pip3 install -r requirements.txt
 
 
 FLASK_ENV=development ?
+flask_sqlalchemy ?
 
 6. Запустить проект 
 flask run 
