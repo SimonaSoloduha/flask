@@ -50,7 +50,9 @@ You should consider upgrading via the '..... flask/venv/bin/python3 -m pip insta
 
 6. Задать значения FLASK_APP и FLASK_DEBUG 
 
+
 export FLASK_APP=project
+
 export FLASK_DEBUG=1
 
 
