@@ -46,8 +46,10 @@ You should consider upgrading via the '..... flask/venv/bin/python3 -m pip insta
 
 Используя Python REPL создайте базу данных с помощью метода create_all для объекта db. 
 
->>> from project import db, create_app
->>> db.create_all(app=create_app())
+python3
+from project import db, create_app
+db.create_all(app=create_app())
+exit()
 
 7. Задайте значения FLASK_APP и FLASK_DEBUG 
 
@@ -61,7 +63,7 @@ export FLASK_DEBUG=1
 
 flask run 
 
-(Если проект не запускается из-за ошибок в установке пакетов, но при этом вы установили все необходимые пакеты - перезапустите проект выполнив шаги 3, 4, 6)
+(Если проект не запускается из-за ошибок в установке пакетов, но при этом вы установили все необходимые пакеты - перезапустите проект выполнив шаги 3(здесь не забудьте указать полный путь), 4, 6)
 
 9. Перейдете по ссыке
 
