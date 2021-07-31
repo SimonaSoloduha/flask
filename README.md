@@ -42,13 +42,14 @@ WARNING: You are using pip version 20.2.3; however, version 21.2.1 is available.
 You should consider upgrading via the '..... flask/venv/bin/python3 -m pip install --upgrade pip' command.)
 
 
-<!-- 4. Создать БД 
-Используя Python REPL создаем базу данных, используя метод create_all для объекта db. 
+6. Создать БД 
 
-* from project import db, create_app
-* db.create_all(app=create_app()) -->
+Используя Python REPL создайте базу данных с помощью метода create_all для объекта db. 
 
-6. Задайте значения FLASK_APP и FLASK_DEBUG 
+>>> from project import db, create_app
+>>> db.create_all(app=create_app())
+
+7. Задайте значения FLASK_APP и FLASK_DEBUG 
 
 
 export FLASK_APP=project
@@ -56,13 +57,13 @@ export FLASK_APP=project
 export FLASK_DEBUG=1
 
 
-7. Запустите проект
+8. Запустите проект
 
 flask run 
 
 (Если проект не запускается из-за ошибок в установке пакетов, но при этом вы установили все необходимые пакеты - перезапустите проект выполнив шаги 3, 4, 6)
 
-8. Перейдете по ссыке
+9. Перейдете по ссыке
 
 
 http://127.0.0.1:5000/ 
